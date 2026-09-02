@@ -1,22 +1,55 @@
-O código desenvolvido em Python simula um sistema simples de pedidos de uma lanchonete utilizando o terminal. O objetivo do programa é permitir que o usuário escolha itens de um cardápio, adicione ao pedido, visualize os itens selecionados, remova itens e finalize a compra, mostrando o valor total.
+# Sistema de Pedidos
 
-No início do programa é criada uma lista chamada **pedidos**, que será responsável por armazenar todos os itens escolhidos pelo usuário. Cada item é guardado como uma tupla contendo o nome do produto e o seu preço.
+Sistema desenvolvido em Python para simular o atendimento de uma lanchonete por meio do terminal.
 
-Em seguida, o programa entra em um **laço de repetição `while True`**, que mantém o sistema funcionando continuamente até que o usuário finalize o pedido. Dentro desse laço é exibido um menu principal com as seguintes opções: comida, bebida, doces, visualizar pedidos, finalizar o pedido e remover item do pedido.
+O programa permite selecionar produtos do cardápio, adicionar itens ao pedido, visualizar o valor parcial, remover produtos e finalizar a compra.
 
-Para evitar erros quando o usuário digita algo que não seja número, o programa utiliza **`try` e `except`**, garantindo que apenas valores numéricos sejam aceitos na escolha das opções.
+## Funcionalidades
 
-Quando o usuário escolhe a opção **1 (Comida)**, é apresentado um cardápio com diferentes alimentos como hambúrguer, pizza, empada, torta, pão de queijo e coxinha. Ao selecionar um item, ele é adicionado à lista **pedidos** utilizando o método **`append()`**, que insere o nome do produto e o preço na lista.
+- Visualização de categorias do cardápio
+- Seleção de comidas
+- Seleção de bebidas
+- Seleção de doces
+- Adição de itens ao pedido
+- Visualização dos itens escolhidos
+- Cálculo do valor parcial
+- Remoção de itens
+- Cálculo do valor total
+- Finalização do pedido
+- Tratamento básico de entradas inválidas
 
-Na opção **2 (Bebida)** ocorre o mesmo processo, mostrando bebidas disponíveis como refrigerantes e sucos. O item escolhido também é armazenado na lista de pedidos.
+## Categorias disponíveis
 
-Na opção **3 (Doces)** o usuário pode escolher sobremesas como brigadeiro, beijinho, pudim e bolo de chocolate, que também são adicionadas à lista.
+O cardápio está dividido em:
 
-A opção **4 (Ver pedidos)** permite visualizar todos os itens já selecionados. O programa percorre a lista **pedidos** utilizando um laço **`for`**, exibindo o nome de cada produto e seu preço. Durante esse processo, o programa também soma os valores para mostrar o **total parcial do pedido**.
+- Comidas
+- Bebidas
+- Doces
 
-Na opção **5 (Finalizar pedido)** o sistema mostra todos os itens escolhidos e calcula o **valor total a pagar**. Após exibir o total e uma mensagem de agradecimento, o programa é encerrado utilizando o comando **`break`**.
+Cada produto possui nome e preço definidos no sistema.
 
-A opção **6 (Remover item do pedido)** permite excluir algum produto escolhido. O programa usa a função **`enumerate()`** para mostrar os itens numerados. O usuário digita o número do item que deseja remover e o programa utiliza o método **`pop()`** para retirar o elemento da lista.
+## Tecnologias utilizadas
 
-Dessa forma, o código simula o funcionamento básico de um sistema de pedidos, permitindo adicionar, visualizar, remover itens e calcular o valor final da compra.
+- Python
 
+## Sobre o projeto
+
+Este projeto foi desenvolvido com o objetivo de praticar conceitos fundamentais de programação em Python por meio da criação de um sistema interativo de pedidos.
+
+O usuário utiliza um menu no terminal para navegar pelas categorias, selecionar produtos e gerenciar seu pedido até a finalização.
+
+## Conceitos praticados
+
+Durante o desenvolvimento foram utilizados conceitos como:
+
+- Listas
+- Tuplas
+- Estruturas condicionais
+- Laços de repetição
+- Entrada e saída de dados
+- Manipulação de listas
+- `append()` e `pop()`
+- `enumerate()`
+- Cálculo de valores
+- Formatação de valores monetários
+- Tratamento de exceções com `try` e `except`
